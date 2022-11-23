@@ -1,0 +1,108 @@
+@media only screen and (max-width: 480px) {
+
+  /* cadastrese*/
+  
+  form:first-child div {
+    border-radius: 0.5rem;
+  }
+
+  form:first-child div:first-child {
+    grid-column: 1/2;
+  }
+
+  form:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw;
+  }
+
+  header div:last-child,
+  header div:nth-last-child(2) {
+    display: block;
+  }
+
+  header img {
+    margin-right: 4vw;
+  }
+
+  header div div {
+    color: #72A046;
+    border: 3px #F5AE45 solid;
+    text-align: center;
+  }
+
+  main form:first-child div:last-child {
+    grid-column: 2/3;
+  }
+
+  main form:first-child div:last-child,
+  main form:first-child div:first-child {
+    border: #F5AE45 solid 2px;
+  }
+
+  main form:first-child label {
+    color: #333
+  }
+
+  h2 {
+    color: #72A046;
+    margin-top: 4vw;
+  }
+
+  /* estilo-cadastrese_loja*/
+
+  input[type="radio"] {
+    accent-color: #72A046;
+  }
+
+  /* estilo cadastro_loja*/
+
+  input[type="url"],
+  textarea,
+  input[type="tel"] {
+    width: 90vw;
+    min-width: 288px;
+  }
+
+  form div:nth-child(6) label {
+    color: #555
+  }
+
+  form div:nth-child(6) label:first-child {
+    color: #72A046
+  }
+
+  #vendedor {
+    display: none;
+  }
+
+  /* cadastro*/
+
+  input[type="file"] {
+    display: block;
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  input[type="file"]::file-selector-button {
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border-color: #797979
+  }
+
+  label[for="foto"],
+  input[type="file"]::file-selector-button,
+  input[type="file"] {
+    color: #797979;
+  }
+
+  main input[type=reset] {
+    color: #F5AE45;
+    border: #72A046 solid 3px;
+    min-width: 90px;
+    margin-right: 4vw;
+    width: 10vw;
+    margin-left: 8vw;
+  }
+
+}

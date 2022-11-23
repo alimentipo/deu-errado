@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alimentipo - Cadastre-se</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cadastro_index_login.css">
+    <link rel="stylesheet" href="css/cadastro_login.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/cadastrese.js"></script>
+    <script src="js/perfil.js"></script>
+
+</head>
+<body>
+    <header>
+        <div></div>
+        <div></div>
+        <a href="index.html">
+            <img src="images/logo.png">
+        </a>
+        <img onclick="perfil()" src="images/boneco_login.svg">
+        <div id="caixa">
+            <a href="cadastrese.html" >Cadastro</a>
+            <a href="login.html">Log-in</a>
+        </div>
+        <h1>Cadastre-se</h1>
+    </header>
+    <main>
+        <form>
+            <div>
+                <input checked onclick="mostra_comprador()" type="radio" name="comprador_ou_vendedor" id="input_comprador" value="comprador">
+                <label for="comprador"  >Cadastro Comprador</label><br>
+            </div>
+            <div>
+                <input onclick="mostra_vendedor()" type="radio" name="comprador_ou_vendedor" id="input_vendedor" value="vendedor">
+                <label for="vendedor " >Cadastro Vendedor</label><br>
+            </div>
+        </form>
+        <div id="comprador">
+        <h2>Cadastro de comprador</h2>
+        <form>
+            <div>
+                <label for ="nome">Nome de usuário</label>
+                <input type="text" name="nome">
+            </div>
+            <div>
+                <label for ="email">E-mail</label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <label for ="senha">Senha</label>
+                <input type="text" name="senha">
+            </div>
+            <div>
+                <label for ="foto">Foto de perfil (opcional)</label>
+                <input type="file" name="foto">
+            </div>
+            <input type="reset" value="Limpar">
+            <input type ="submit" value="Finalizar cadastro">
+        </form>
+    </div>
+    <div id="vendedor">
+    <h2>Cadastro de vendedor</h2>
+        <form>
+            <div>
+                <label for ="nome">Nome da Loja</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div>
+                <label for ="email">E-mail do Adminstrador</label>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label for ="senha">Senha</label>
+                <input type="text" name="senha" required>
+            </div>
+            <div>
+                <label for ="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" required>
+            </div>
+            <div>
+                <label for ="foto">Foto de perfil</label>
+                <input type="file" name="foto" required>
+            </div>
+            <div>
+                <label for ="loja_online_fisica">Sua loja é...</label>
+                <div>
+                <input type="radio" name="fisica_ou_online" id="online" value="online" required>
+                <label for="online">Online</label><br>
+                <input type="radio" name="fisica_ou_online" id="fisica" value="fisica">
+                <label for="fisica ">Física</label><br>
+                <input type="radio"  name="fisica_ou_online" id="online_fisica" value="online_fisica">
+                <label for="online_fisica">Online e física</label><br>
+                </div>
+            </div>
+            <div>
+                <label for ="link">Link do site da loja</label>
+                <input type="url"  name="link">
+            </div>
+            <div>
+                <label for ="desc">Descrição da loja</label>
+                <textarea name="desc" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for ="end">Endereço da loja física</label>
+                <textarea name="end" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for ="tele">Telefone</label>
+                <input type="tel"  name="tele">
+            </div>
+            <input type="reset" value="Limpar">
+            <input type = "submit" value="Finalizar cadastro">
+        </form>
+    </div>
+    </main>
+    <footer class= "top">
+        <div class="green"></div>
+        <div class="orange"></div>
+        <address class="um">
+            <div class="m">
+                <h4>
+                    Informações
+                </h4>
+                <p  class="n">
+                    Sobre nós
+            </p>
+            <p  class="n">
+                Política de privacidade
+        </p>
+        <p  class="n">
+            Termos de uso
+    </p>
+            </div>
+            <div class="m">
+                <h4>
+                        Fale conosco
+                </h4>
+                <p  class="n">
+                        alimentipo@gmail.com
+                </p>
+            </div>
+            <div class="m">
+                <h4>
+                        Redes sociais
+                </h4>
+                <p  class="n">
+                        @alimentipo
+                </p>
+            </div>
+        </address>
+        <div class="green"></div>
+        <div class="orange"></div>
+    </footer>
+</body>
